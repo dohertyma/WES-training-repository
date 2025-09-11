@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WES Training Repository</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f6f8fa;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h1 {
+      color: #444;
+      margin-bottom: 0.2em;
+    }
+    .subtitle {
+      color: #555;
+      font-style: italic;
+      margin-bottom: 1em;
+    }
+    .instructions {
+      margin: 1.5em 0 2em 0;
+      font-size: 1.02em;
+    }
+    .instructions a {
+      color: #0078d7;
+      text-decoration: underline;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: #e8f0fa;
+      border-radius: 10px;
+      padding: 1.2em 1em;
+      min-width: 270px;
+      flex: 1 1 320px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      min-height: 150px;
+    }
+    .card h2 {
+      font-size: 1.07em;
+      margin: 0 0 0.4em 0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.45em;
+    }
+    .card ul, .card li {
+      margin: 0 0 0.3em 0;
+      padding: 0;
+      list-style: disc inside;
+      color: #333;
+      font-size: 0.98em;
+    }
+    .icon {
+      font-size: 1.1em;
+    }
+    @media (max-width: 800px) {
+      .container { padding: 1em; }
+      .grid { flex-direction: column; gap: 0.7em; }
+      .card { min-width: unset; }
+    }
+    .section-divider { border-top: 2px solid #d5e3ee; margin: 2em 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WES Training Repository</h1>
+    <div class="subtitle">
+      A repository of wastewater and environmental surveillance training materials for all levels of interest on a broad range of relevant topics.
+    </div>
+    <div class="instructions">
+      Do you have a training you would like to share or feedback to improve this repository?
+      <br>
+      <a href="mailto:your-team@email.com">Contact the COP WES team</a> or <a href="#contribute">submit a pull request</a>.
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2><span class="icon">🚨</span> WES in Emergencies</h2>
+        <ul>
+          <li>WES in Emergency Zones</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2><span class="icon">🔗</span> WES Foundations</h2>
+        <ul>
+          <li>Introduction to WES</li>
+          <li>Introduction to Epidemiological concepts and approaches in WES</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2><span class="icon">🌐</span> Collaboration & Communication</h2>
+        <ul>
+          <li>Data communication in WES</li>
+          <li>Strategies and benefits of Interdisciplinary Collaboration for Data Integration</li>
+          <li>Engaging Stakeholders and Community Awareness</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2><span class="icon">🏛️</span> WES and Institutions</h2>
+        <ul>
+          <li>Engagement with policymakers</li>
+          <li>Integration into Public Health systems /decisionmakers</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>WES Transportation (airplanes, airports, transit hubs)</h2>
+      </div>
+      <div class="card">
+        <h2><span class="icon">🔒</span> Security, Compliance, Legal</h2>
+        <ul>
+          <li>Regulatory Compliance and Legal Considerations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Collection</h2>
+        <ul>
+          <li>Methodologies in Wastewater Sampling</li>
+          <li>Sampling protocols</li>
+        </ul>
+        <h2>Modelling</h2>
+        <ul>
+          <li>Data modeling in WES</li>
+        </ul>
+        <h2>Curation</h2>
+        <ul>
+          <li>Normalization Strategies</li>
+        </ul>
+        <h2>Analysis</h2>
+        <ul>
+          <li>Analyzing and Interpreting Wastewater Data</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2><span class="icon">📊</span> Data Acquisition & Processing</h2>
+        <ul>
+          <li>Statistical methods</li>
+          <li>Analytical procedures for detection and quantification of different targets</li>
+        </ul>
+      </div>
+      <div class="card">
+        <!-- empty for layout balance -->
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+    <div id="contribute">
+      <h2>How to contribute</h2>
+      <ol>
+        <li>
+          <b>Fork</b> this repository using the "Fork" button at the top right of the page.
+        </li>
+        <li>
+          <b>Edit <code>index.html</code></b> and add your training under the appropriate topic card above.
+          <br>
+          Please follow the format below:
+          <pre>
+&lt;ul&gt;
+  &lt;li&gt;Training title or description [with a public link if available]&lt;/li&gt;
+&lt;/ul&gt;
+          </pre>
+        </li>
+        <li>
+          <b>Commit</b> your changes with a clear message.
+        </li>
+        <li>
+          <b>Open a Pull Request</b> from your forked repository to the main branch of this repository.
+        </li>
+        <li>
+          Your PR will be reviewed and merged. Thank you for contributing!
+        </li>
+      </ol>
+      <p>
+        Need help? See the <a href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects" target="_blank">GitHub contributing guide</a>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
