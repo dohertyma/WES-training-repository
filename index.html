@@ -1,3 +1,4 @@
+```html name=index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,6 +62,13 @@
       align-items: center;
       gap: 0.45em;
     }
+    .card .oneliner {
+      font-size: 0.97em;
+      font-style: italic;
+      color: #4a5870;
+      margin-bottom: 0.6em;
+      margin-top: -0.2em;
+    }
     .card ul, .card li {
       margin: 0 0 0.3em 0;
       padding: 0;
@@ -93,76 +101,91 @@
 
     <div class="grid">
       <div class="card">
-        <h2><span class="icon">🚨</span> WES in Emergencies</h2>
-        <ul>
-          <li>WES in Emergency Zones</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2><span class="icon">🔗</span> WES Foundations</h2>
+        <h2><span class="icon">🔗</span> 1. Foundations of WES</h2>
+        <div class="oneliner">
+          Introduces the purpose, value, and interdisciplinary nature of Wastewater Epidemiological Surveillance (WES), along with real-world pilot implementations.
+        </div>
         <ul>
           <li>Introduction to WES</li>
-          <li>Introduction to Epidemiological concepts and approaches in WES</li>
+          <li>Introduction to Epidemiological Concepts and Approaches in WES</li>
+          <li>National Report: Experience Establishing Pilot Project</li>
+          <li>Strategies and Benefits of Interdisciplinary Collaboration for Data Integration</li>
         </ul>
       </div>
       <div class="card">
-        <h2><span class="icon">🌐</span> Collaboration & Communication</h2>
-        <ul>
-          <li>Data communication in WES</li>
-          <li>Strategies and benefits of Interdisciplinary Collaboration for Data Integration</li>
-          <li>Engaging Stakeholders and Community Awareness</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <h2><span class="icon">🏛️</span> WES and Institutions</h2>
-        <ul>
-          <li>Engagement with policymakers</li>
-          <li>Integration into Public Health systems /decisionmakers</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>WES Transportation (airplanes, airports, transit hubs)</h2>
-      </div>
-      <div class="card">
-        <h2><span class="icon">🔒</span> Security, Compliance, Legal</h2>
-        <ul>
-          <li>Regulatory Compliance and Legal Considerations</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <h2>Collection</h2>
+        <h2><span class="icon">🧪</span> 2. Methods & Protocols</h2>
+        <div class="oneliner">
+          Covers the scientific procedures and methodological standards for collecting and processing wastewater data.
+        </div>
         <ul>
           <li>Methodologies in Wastewater Sampling</li>
-          <li>Sampling protocols</li>
-        </ul>
-        <h2>Modelling</h2>
-        <ul>
-          <li>Data modeling in WES</li>
-        </ul>
-        <h2>Curation</h2>
-        <ul>
+          <li>Sampling Protocols</li>
+          <li>Analytical Procedures for Detection and Quantification of Different Targets</li>
           <li>Normalization Strategies</li>
+          <li>Statistical Methods</li>
+          <li>Data Modeling in WES</li>
         </ul>
-        <h2>Analysis</h2>
+      </div>
+      <div class="card">
+        <h2><span class="icon">📊</span> 3. Data Systems & Analysis</h2>
+        <div class="oneliner">
+          Focuses on tools, platforms, and analytical techniques for interpreting, visualizing, and leveraging wastewater data.
+        </div>
         <ul>
+          <li>Data Platform / Visualization</li>
           <li>Analyzing and Interpreting Wastewater Data</li>
+          <li>Data Communication in WES</li>
+          <li>Promoting Innovative and Cost-effective Solutions</li>
         </ul>
       </div>
+    </div>
+
+    <div class="grid">
       <div class="card">
-        <h2><span class="icon">📊</span> Data Acquisition & Processing</h2>
+        <h2><span class="icon">🗂️</span> 4. Metadata, Standards & Interoperability</h2>
+        <div class="oneliner">
+          Addresses the structuring of data, standardization, privacy concerns, and ensuring systems can work across tools, regions, and institutions.
+        </div>
         <ul>
-          <li>Statistical methods</li>
-          <li>Analytical procedures for detection and quantification of different targets</li>
+          <li>Ensuring Data Anonymity and Privacy Protection</li>
+          <li>Metadata Standards for WES</li>
+          <li>Interoperability Across Systems and Platforms</li>
+          <li>Governance and Long-term Data Stewardship</li>
         </ul>
       </div>
       <div class="card">
-        <!-- empty for layout balance -->
+        <h2><span class="icon">🌎</span> 5. Place-Based Applications</h2>
+        <div class="oneliner">
+          Shows how WES is applied in different contexts—urban centers, emergency zones, and community-based systems—with a focus on policy and operational integration.
+        </div>
+        <ul>
+          <li><b>Urban/HUB Settings:</b></li>
+          <ul>
+            <li>WES in HUBs</li>
+            <li>Integration into Public Health Systems / Decisionmakers</li>
+            <li>Engagement with Policymakers</li>
+          </ul>
+          <li><b>Emergency or High-Risk Zones:</b></li>
+          <ul>
+            <li>WES in Emergency Zones</li>
+            <li>Planning Effective Interventions Using Wastewater Data</li>
+            <li>Regulatory Compliance and Legal Considerations</li>
+          </ul>
+          <li><b>Community-Level Engagement:</b></li>
+          <ul>
+            <li>Engaging Stakeholders and Community Awareness</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="card">
+        <h2><span class="icon">🤝</span> 6. Training, Collaboration & Growth</h2>
+        <div class="oneliner">
+          Interactive components that build skills, foster peer learning, and connect practitioners through hands-on learning and certification.
+        </div>
+        <ul>
+          <li>Practical Exercises and Group Discussions</li>
+          <li>Resources, Networking, and Certification Opportunities</li>
+        </ul>
       </div>
     </div>
 
@@ -200,3 +223,5 @@
   </div>
 </body>
 </html>
+```
+This adds a one-line description (the "oneliner") at the top of each card, matching your provided summaries for each section. Let me know if you need further wording tweaks or want to add more details!
